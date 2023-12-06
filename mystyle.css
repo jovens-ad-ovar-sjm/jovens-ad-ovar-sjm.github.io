@@ -52,7 +52,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    color: white;
     backdrop-filter: blur(5px);
 }
 
@@ -67,6 +66,7 @@ body {
     margin-top: 0;
     font-size: 10vw;
     text-align: center;
+    color: white;
 }
 
 .btn-group {
