@@ -1,5 +1,9 @@
-body {
+/* body {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-items: center;
 }
   
 h1 {
@@ -10,22 +14,21 @@ h1 {
     margin: auto;
 }
 
+.frasesContainer {
+    display: flex;
+}
+
 .btn-group button {
-    background-color: black; /* Green background */
-    border: 1px solid black; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
-    margin: auto;
+    background-color: black; 
+    border: 1px solid black; 
+    color: white; 
+    cursor: pointer;
 }
 
 .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+    border-bottom: none; 
 }
 
-/* Add a background color on hover */
 .btn-group button:hover {
     background-color: grey;
 }
@@ -33,4 +36,73 @@ h1 {
 a {
     text-decoration: none;
     size: 20px;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Adjusted from justify-items to justify-content */
+    align-items: center;
+    align-content: center;
+    background-image: url('CapaSite.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    backdrop-filter: blur(4px);
+}
+
+.fraseContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#frase {
+    margin-top: 0;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group a {
+    margin-bottom: 10px; /* Adjusted margin to create space between buttons */
+    text-decoration: none;
+}
+
+button {
+    padding: 15px;
+    width: 40vw;
+    height: 9vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Darker background transparency */
+    backdrop-filter: blur(8px);
+    color: white; /* Set text color to white for better visibility */
+    transition: background 0.3s ease-in-out;
+    font-size: 3vw;
+}
+
+.icon {
+    margin-right: 12px;
+    width: 5vw;
+    height: 5vw;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker background transparency on hover */
 }
