@@ -52,12 +52,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-
-    backdrop-filter: blur(4px);
+    color: white;
+    backdrop-filter: blur(5px);
 }
 
 .fraseContainer {
     margin: 20px;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
 }
