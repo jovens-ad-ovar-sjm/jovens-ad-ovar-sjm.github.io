@@ -44,7 +44,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Adjusted from justify-items to justify-content */
+    justify-content: space-evenly; /* Adjusted from justify-items to justify-content */
     align-items: center;
     align-content: center;
     background-image: url('CapaSite.png');
@@ -64,7 +64,7 @@ body {
 
 #frase {
     margin-top: 0;
-    font-size: 10vw;
+    font-size: 5vh;
     text-align: center;
     color: white;
 }
